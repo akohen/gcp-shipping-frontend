@@ -9,3 +9,9 @@ steps:
   args: ['run', 'build']
 - name: 'gcr.io/$PROJECT_ID/firebase'
   args: ['deploy', '--project', 'gcp-shipping']
+  secretEnv: ['FIREBASE_TOKEN']
+secrets:
+- kmsKeyName: 'projects/gcp-shipping/locations/global/keyRings/cloudbuilder/cryptoKeys/firebase-token'
+  secretEnv:
+    FIREBASE_TOKEN: 'CiQAICgqSEtHuC1zHgF52mPcI9qcSTEQm1hL+TPo549MtMfl98sSawBhkIS1PdY8IRxcIHDKle4GOwOd7vmKS3/7Bp8BFOCBI6IRAGUNUzH1wvT2k9W3Q0i0OyY6rO6rfooBJZCUwcuhIEOTM9pkVNmEH+8RRlc4sZu2fqw5EoMULHBGUhWfDEqsaElIyR3UmnYO'
+ 
