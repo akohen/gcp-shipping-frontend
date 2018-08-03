@@ -5,7 +5,7 @@ import { Page } from '../style';
 
 const Component = () => (
   <Page>
-    Hello! This should get deployed from a GCP trigger
+    Hello! This should get deployed from a GCP trigger, edited from GitHub
   </Page>
 );
 
